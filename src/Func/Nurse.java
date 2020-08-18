@@ -3,6 +3,7 @@ package Func;
 import java.io.File;
 
 public class Nurse extends Account {
+    static System system = new System();
     String ID,Username,Password,speciality;
     Double salary;
     File schedule;

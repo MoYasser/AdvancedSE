@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Appointment {
+    static System system = new System();
     Doctor supervisingDr;
     Nurse assistingNurse;
     Case aCase;
@@ -13,4 +14,10 @@ public class Appointment {
     Date followUpDate;
     Double price;
 
+    Appointment(){
+        supervisingDr = new Doctor();
+        assistingNurse = new Nurse();
+        aCase = new Case();
+        medication = new ArrayList<String>();
+    }
 }
