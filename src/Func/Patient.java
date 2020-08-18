@@ -10,10 +10,12 @@ public class Patient extends Account{
     ArrayList<String> Allergies;
     ArrayList<String> chronicIllness;
 
+
     Patient(){
         pastAppointments = new ArrayList<Appointment>();
         payments = new ArrayList<Payment>();
         Allergies = new ArrayList<String>();
+
         chronicIllness = new ArrayList<String>();
     }
 }
