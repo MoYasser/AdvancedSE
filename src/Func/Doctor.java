@@ -7,11 +7,6 @@ public class Doctor extends Account {
     String ID,Username,Password,speciality;
     Double salary;
     File schedule;
-    Room clinicRoom;
-
-    Doctor(){
-        clinicRoom = new Room();
-    }
 
     public void acceptAppointment(Appointment app){
 
