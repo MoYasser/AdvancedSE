@@ -3,7 +3,7 @@ package Func;
 import java.util.ArrayList;
 
 public class Payment {
-    static System system = new System();
+    static Manage manage = new Manage();
     ArrayList<String> appointments;
     Double subtotal,taxes,total;
 

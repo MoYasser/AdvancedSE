@@ -3,7 +3,7 @@ package Func;
 import java.io.File;
 
 public class Doctor extends Account {
-    static System system = new System();
+    static Manage manage = new Manage();
     String ID,Username,Password,speciality;
     Double salary;
     File schedule;

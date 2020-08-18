@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Case {
-    static System system = new System();
+    static Manage manage = new Manage();
     Patient patient;
     ArrayList<String> symptoms;
     ArrayList<String> preExistingCondition;

@@ -3,7 +3,7 @@ package Func;
 import java.util.ArrayList;
 
 public class Patient extends Account{
-    static System system = new System();
+    static Manage manage = new Manage();
     String ID;
     ArrayList<Appointment> pastAppointments;
     ArrayList<Payment> payments;

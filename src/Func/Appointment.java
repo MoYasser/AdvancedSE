@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Appointment {
-    static System system = new System();
+    static Manage manage = new Manage();
     Doctor supervisingDr;
     Nurse assistingNurse;
     Case aCase;
