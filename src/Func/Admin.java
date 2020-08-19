@@ -1,5 +1,12 @@
 package Func;
 
+import GUI.AdminView;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 import java.util.Date;
 
 public class Admin extends Account {
@@ -7,10 +14,9 @@ public class Admin extends Account {
     String ID,Username,Password;
     Double salary;
 
-    public void addDr(){
+    public void addDr() throws IOException {
     }
     public void addNurse(){
-
     }
     public void addReceptionist(){
 

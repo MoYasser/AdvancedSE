@@ -25,4 +25,24 @@ public class Receptionist extends Account {
     public void setSchedule(Nurse n){
 
     }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public String getUsername() {
+        return Username;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public void setUsername(String username) {
+        Username = username;
+    }
+
+    public void setPassword(String password) {
+        Password = password;
+    }
 }

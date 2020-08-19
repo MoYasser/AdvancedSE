@@ -20,4 +20,24 @@ public class Nurse extends Account {
     public double checkSalary(){
         return salary;
     }
+
+    public String getUsername() {
+        return Username;
+    }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setPassword(String password) {
+        Password = password;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public void setUsername(String username) {
+        Username = username;
+    }
 }

@@ -11,11 +11,15 @@ public class Patient extends Account{
     ArrayList<String> chronicIllness;
 
 
-    Patient(){
+    public Patient(){
         pastAppointments = new ArrayList<Appointment>();
         payments = new ArrayList<Payment>();
         Allergies = new ArrayList<String>();
 
         chronicIllness = new ArrayList<String>();
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
     }
 }

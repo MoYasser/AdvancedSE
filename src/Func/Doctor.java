@@ -24,4 +24,23 @@ public class Doctor extends Account {
 
     }
 
+    public String getUsername() {
+        return Username;
+    }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setUsername(String username) {
+        Username = username;
+    }
+
+    public void setPassword(String password) {
+        Password = password;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
 }
