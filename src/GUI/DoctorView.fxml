@@ -12,7 +12,7 @@
    <children>
       <ImageView fitHeight="400.0" fitWidth="583.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../white_coat.jpg" />
+            <Image url="/Resources/white_coat.jpg" />
          </image>
       </ImageView>
       <Text fill="#b53030" layoutX="353.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Doctor!">
@@ -33,6 +33,6 @@
             <Font size="21.0" />
          </font>
       </Label>
-      <Button id="viewSchedule" layoutX="389.0" layoutY="310.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" text="Log out" />
+      <Button id="logOutBtn" layoutX="389.0" layoutY="310.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" text="Log out" />
    </children>
 </AnchorPane>
