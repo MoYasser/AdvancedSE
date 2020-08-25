@@ -14,10 +14,14 @@ public class Appointment {
     Date followUpDate;
     Double price;
 
-    Appointment(){
+    public Appointment(){
         supervisingDr = new Doctor();
         assistingNurse = new Nurse();
         aCase = new Case();
         medication = new ArrayList<String>();
+    }
+
+    public void setAppointmentID(String appointmentID) {
+        AppointmentID = appointmentID;
     }
 }

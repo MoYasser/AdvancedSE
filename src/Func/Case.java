@@ -12,7 +12,7 @@ public class Case {
     ArrayList<String> preExistingCondition;
     String Date;
 
-    Case(){
+    /*Case(){
         ///////////////ADDING Patient///////////////
         patient = new Patient();
         ///////////////ADDING SYMPTOMS///////////////
@@ -36,5 +36,5 @@ public class Case {
         ///////////////ADDING Date///////////////
         System.out.print("Please Enter the Date of Appointment and time");
         Date=scan.nextLine();
-    }
+    }*/
 }
