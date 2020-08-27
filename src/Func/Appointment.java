@@ -21,6 +21,10 @@ public class Appointment {
         medication = new ArrayList<String>();
     }
 
+    public String getAppointmentID() {
+        return AppointmentID;
+    }
+
     public void setAppointmentID(String appointmentID) {
         AppointmentID = appointmentID;
     }
