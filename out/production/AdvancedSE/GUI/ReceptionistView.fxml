@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ReceptionistView">
+   <children>
+      <TableView fx:id="appointmentsTable" layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="doctorCol" prefWidth="75.0" text="Doctor" />
+            <TableColumn fx:id="nurseCol" prefWidth="75.0" text="Nurse" />
+            <TableColumn fx:id="diseaseCol" prefWidth="75.0" text="Disease" />
+            <TableColumn fx:id="followUpCol" prefWidth="75.0" text="FollowUp" />
+            <TableColumn fx:id="priceCol" prefWidth="75.0" text="Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
