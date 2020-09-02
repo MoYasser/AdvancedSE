@@ -12,7 +12,7 @@ public class Appointment {
     ArrayList<String> medication;
     Boolean followUp,complete;
     Date followUpDate;
-    Double price;
+    String price;
 
     public Appointment(){
         supervisingDr = new Doctor();
@@ -28,4 +28,29 @@ public class Appointment {
     public void setAppointmentID(String appointmentID) {
         AppointmentID = appointmentID;
     }
+
+    public Doctor getSupervisingDr() {
+        return supervisingDr;
+    }
+
+    public Nurse getAssistingNurse() {
+        return assistingNurse;
+    }
+
+    public String getDisease() {
+        return disease;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setDisease(String disease) {
+        this.disease = disease;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
 }
+
