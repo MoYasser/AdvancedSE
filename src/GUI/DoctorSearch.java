@@ -35,8 +35,8 @@ public class DoctorSearch {
         appointmentID.setText(manage.appointments.get(s).getAppointmentID());
         PriceTxt.setText(manage.appointments.get(s).getPrice());
         DiseaseTxt.setText(manage.appointments.get(s).getDisease());
-        NurseNameTxt.setText(manage.appointments.get(s).getSupervisingDr().getName());
-        DocsNameTxt.setText(manage.appointments.get(s).getAssistingNurse().getName());
+        NurseNameTxt.setText(manage.appointments.get(s).getAssistingNurse().getName());
+        DocsNameTxt.setText(manage.appointments.get(s).getSupervisingDr().getName());
     }
 
     public void SetData(ActionEvent actionEvent) {
@@ -47,7 +47,7 @@ public class DoctorSearch {
         manage.appointments.get(s).setDisease(DiseaseTxt.getText());
     }
     public void getBack(ActionEvent actionEvent) throws IOException {
-        Parent viewParent = FXMLLoader.load(getClass().getResource("ReceptionistView.fxml"));
+        Parent viewParent = FXMLLoader.load(getClass().getResource("DoctorView.fxml"));
         Scene viewScene = new Scene(viewParent);
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
         primaryStage.setScene(viewScene);
