@@ -24,7 +24,7 @@
          </font>
       </Label>
       <Button fx:id="editAppointment" layoutX="394.0" layoutY="134.0" mnemonicParsing="false" onAction="#searchApp" prefHeight="43.0" prefWidth="123.0" text="Edit Appointment" />
-      <Button layoutX="394.0" layoutY="200.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="123.0" text="View Salary" />
+      <Button fx:id="DocSalaryBtn" layoutX="394.0" layoutY="200.0" mnemonicParsing="false" onAction="#DocSalaryView" prefHeight="43.0" prefWidth="123.0" text="View Salary" />
       <Button layoutX="394.0" layoutY="264.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="123.0" text="View Schedule" />
       <Button fx:id="logOutBtn" layoutX="394.0" layoutY="324.0" mnemonicParsing="false" onAction="#logOut" prefHeight="43.0" prefWidth="123.0" text="Log Out" />
    </children>

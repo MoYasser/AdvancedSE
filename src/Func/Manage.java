@@ -12,5 +12,13 @@ public class Manage {
     static public ArrayList<Nurse> nurses = new ArrayList<Nurse>();
     static public ArrayList<Appointment> appointments = new ArrayList<Appointment>();
     static public ArrayList<Case> cases = new ArrayList<Case>();
+    static int currentRegIndex;
 
+    public static void setCurrentRegIndex(int currentRegIndex) {
+        Manage.currentRegIndex = currentRegIndex;
+    }
+
+    public static int getCurrentRegIndex() {
+        return currentRegIndex;
+    }
 }

@@ -1,8 +1,6 @@
 package GUI;
 
-import Func.Appointment;
 import Func.Manage;
-import Func.Patient;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,9 +9,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.IOException;
 
-public class DoctorSearch {
+public class EditAptView {
     static Manage manage = new Manage();
 
     public Button searchBtn;
@@ -39,7 +38,6 @@ public class DoctorSearch {
         DiseaseTxt.setText(manage.appointments.get(s).getDisease());
         NurseNameTxt.setText(manage.appointments.get(s).getAssistingNurse().getName());
         DocsNameTxt.setText(manage.appointments.get(s).getSupervisingDr().getName());
-        patientTxt.setText(manage.appointments.get(s).getPatient().getName());
     }
 
     public void SetData(ActionEvent actionEvent) throws IOException {
@@ -57,7 +55,7 @@ public class DoctorSearch {
         successStage.show();
     }
     public void getBack(ActionEvent actionEvent) throws IOException {
-        Parent viewParent = FXMLLoader.load(getClass().getResource("DoctorView.fxml"));
+        Parent viewParent = FXMLLoader.load(getClass().getResource("ReceptionistView.fxml"));
         Scene viewScene = new Scene(viewParent);
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
         primaryStage.setScene(viewScene);

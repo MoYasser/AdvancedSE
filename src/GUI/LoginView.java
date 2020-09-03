@@ -38,6 +38,7 @@ public class LoginView {
             case "Admin":
                 for(int i=0; i<manage.admins.size();i++){
                     if(usernameTxt.getText().equalsIgnoreCase(manage.admins.get(i).getUsername())&&passwordTxt.getText().equalsIgnoreCase(manage.admins.get(i).getPassword())){
+                        manage.setCurrentRegIndex(i);
                         Parent viewParent = FXMLLoader.load(getClass().getResource("AdminView.fxml"));
                         Scene viewScene = new Scene(viewParent);
                         Stage primaryStage = (Stage) loginBtn.getScene().getWindow();
@@ -51,6 +52,7 @@ public class LoginView {
             case "Receptionist":
                 for(int i=0; i<manage.receptionists.size();i++){
                     if(usernameTxt.getText().equalsIgnoreCase(manage.receptionists.get(i).getUsername())&&passwordTxt.getText().equalsIgnoreCase(manage.receptionists.get(i).getPassword())){
+                        manage.setCurrentRegIndex(i);
                         Parent viewParent = FXMLLoader.load(getClass().getResource("ReceptionistView.fxml"));
                         Scene viewScene = new Scene(viewParent);
                         Stage primaryStage = (Stage) loginBtn.getScene().getWindow();
@@ -65,6 +67,7 @@ public class LoginView {
             case "Doctor":
                 for(int i=0; i<manage.doctors.size();i++){
                     if(usernameTxt.getText().equalsIgnoreCase(manage.doctors.get(i).getUsername())&&passwordTxt.getText().equalsIgnoreCase(manage.doctors.get(i).getPassword())){
+                        manage.setCurrentRegIndex(i);
                         Parent viewParent = FXMLLoader.load(getClass().getResource("DoctorView.fxml"));
                         Scene viewScene = new Scene(viewParent);
                         Stage primaryStage = (Stage) loginBtn.getScene().getWindow();
@@ -79,6 +82,7 @@ public class LoginView {
             case "Nurse":
                 for(int i=0; i<manage.nurses.size();i++){
                     if(usernameTxt.getText().equalsIgnoreCase(manage.nurses.get(i).getUsername())&&passwordTxt.getText().equalsIgnoreCase(manage.nurses.get(i).getPassword())){
+                        manage.setCurrentRegIndex(i);
                         Parent viewParent = FXMLLoader.load(getClass().getResource("NurseView.fxml"));
                         Scene viewScene = new Scene(viewParent);
                         Stage primaryStage = (Stage) loginBtn.getScene().getWindow();

@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class AdminView {
+    public Button editUserBtn;
     Stage successStage = new Stage();
     static Manage manage = new Manage();
     ObservableList<String> userTypeList = FXCollections.observableArrayList("Receptionist","Doctor","Nurse","Patient");
@@ -47,6 +48,7 @@ public class AdminView {
                 manage.receptionists.get(p).setAddress(addressTxt.getText());
                 manage.receptionists.get(p).setUsername(userTxt.getText());
                 manage.receptionists.get(p).setPassword(passwordTxt.getText());
+                manage.receptionists.get(p).setSalary(salaryTxt.getText());
                 Parent root = FXMLLoader.load(getClass().getResource("RegSuccess.fxml"));
                 successStage.setTitle("HCC System");
                 successStage.setScene(new Scene(root, 400, 200));
@@ -64,6 +66,7 @@ public class AdminView {
                 manage.doctors.get(i).setAddress(addressTxt.getText());
                 manage.doctors.get(i).setUsername(userTxt.getText());
                 manage.doctors.get(i).setPassword(passwordTxt.getText());
+                manage.doctors.get(i).setSalary(salaryTxt.getText());
                 Parent rooty = FXMLLoader.load(getClass().getResource("RegSuccess.fxml"));
                 successStage.setTitle("HCC System");
                 successStage.setScene(new Scene(rooty, 400, 200));
@@ -81,6 +84,7 @@ public class AdminView {
                 manage.nurses.get(n).setAddress(addressTxt.getText());
                 manage.nurses.get(n).setUsername(userTxt.getText());
                 manage.nurses.get(n).setPassword(passwordTxt.getText());
+                manage.nurses.get(n).setSalary(salaryTxt.getText());
                 Parent roott = FXMLLoader.load(getClass().getResource("RegSuccess.fxml"));
                 successStage.setTitle("HCC System");
                 successStage.setScene(new Scene(roott, 400, 200));
@@ -107,6 +111,13 @@ public class AdminView {
 
     public void logOut(ActionEvent actionEvent) throws IOException {
         Parent viewParent = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
+        Scene viewScene = new Scene(viewParent);
+        Stage primaryStage = (Stage) logOutBtn.getScene().getWindow();
+        primaryStage.setScene(viewScene);
+    }
+
+    public void editUserView(ActionEvent actionEvent) throws IOException {
+        Parent viewParent = FXMLLoader.load(getClass().getResource("EditUserView.fxml"));
         Scene viewScene = new Scene(viewParent);
         Stage primaryStage = (Stage) logOutBtn.getScene().getWindow();
         primaryStage.setScene(viewScene);

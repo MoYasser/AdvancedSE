@@ -30,15 +30,17 @@
             <DropShadow />
          </effect>
       </Label>
-      <TextField fx:id="PriceTxt" layoutX="351.0" layoutY="237.0" />
+      <TextField fx:id="PriceTxt" layoutX="226.0" layoutY="289.0" />
       <TextField fx:id="DiseaseTxt" layoutX="98.0" layoutY="237.0" />
       <TextField fx:id="NurseNameTxt" layoutX="351.0" layoutY="172.0" />
       <TextField fx:id="DocsNameTxt" layoutX="98.0" layoutY="172.0" />
       <Label layoutX="98.0" layoutY="155.0" text="Doctor's Name" />
-      <Button fx:id="setBtn" layoutX="274.0" layoutY="315.0" mnemonicParsing="false" onAction="#SetData" text="Set" />
-      <Label layoutX="351.0" layoutY="219.0" text="Price" />
+      <Button fx:id="setBtn" layoutX="283.0" layoutY="358.0" mnemonicParsing="false" onAction="#SetData" text="Set" />
+      <Label layoutX="225.0" layoutY="271.0" text="Price" />
       <Label layoutX="98.0" layoutY="219.0" text="Disease" />
       <Label layoutX="351.0" layoutY="155.0" text="Nurse's Name" />
       <Button fx:id="backBtn" layoutX="46.0" layoutY="43.0" mnemonicParsing="false" onAction="#getBack" text="Back" />
+      <TextField fx:id="patientTxt" layoutX="351.0" layoutY="237.0" />
+      <Label layoutX="351.0" layoutY="219.0" text="Patient's Name" />
    </children>
 </AnchorPane>

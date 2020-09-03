@@ -18,7 +18,7 @@
             </image>
         </ImageView>
         <TextField fx:id="appointmentIDTxt" layoutX="43.0" layoutY="135.0" />
-        <TextField fx:id="nIDTxt" layoutX="43.0" layoutY="194.0" />
+        <TextField fx:id="patientTxt" layoutX="43.0" layoutY="194.0" />
         <TextField fx:id="phoneNoTxt" layoutX="43.0" layoutY="250.0" />
         <TextField layoutX="43.0" layoutY="346.0" />
         <TextField fx:id="addressTxt" layoutX="380.0" layoutY="343.0" />
@@ -34,7 +34,7 @@
             <effect>
                 <DropShadow />
             </effect></Label>
-        <Label layoutX="43.0" layoutY="177.0" text="Symptoms" textFill="WHITE">
+        <Label layoutX="43.0" layoutY="177.0" text="Patient Name" textFill="WHITE">
             <effect>
                 <DropShadow />
             </effect></Label>

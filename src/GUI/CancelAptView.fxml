@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CancelAptView">
+    <ImageView fitHeight="500.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../Resources/SOUL-Logo-2-2.png" />
+        </image>
+        <effect>
+            <GaussianBlur />
+        </effect>
+    </ImageView>
+    <TextField fx:id="appointmentID" layoutX="226.0" layoutY="200.0" />
+    <Label layoutX="141.0" layoutY="134.0" text="Please Enter Appointment ID" textFill="#b21d1d">
+        <font>
+            <Font size="25.0" />
+        </font>
+        <effect>
+            <DropShadow />
+        </effect>
+    </Label>
+    <Button fx:id="cancelAptBtn" layoutX="238.0" layoutY="282.0" mnemonicParsing="false" onAction="#DeleteApt" text="Cancel Appointment" />
+    <Button fx:id="backBtn" layoutX="46.0" layoutY="43.0" mnemonicParsing="false" onAction="#getBack" text="Back" />
+</AnchorPane>

@@ -7,6 +7,7 @@ public class Appointment {
     static Manage manage = new Manage();
     Doctor supervisingDr;
     Nurse assistingNurse;
+    Patient patient;
     Case aCase;
     String AppointmentID,disease;
     ArrayList<String> medication;
@@ -51,6 +52,14 @@ public class Appointment {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
     }
 }
 

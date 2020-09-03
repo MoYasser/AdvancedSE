@@ -20,8 +20,8 @@
          </font>
       </Label>
       <Button fx:id="addAppointmentBtn" layoutX="43.0" layoutY="128.0" mnemonicParsing="false" onAction="#addAppointment" prefHeight="35.0" prefWidth="148.0" text="Add Appointment" AnchorPane.leftAnchor="43.0" AnchorPane.topAnchor="128.0" />
-      <Button layoutX="43.0" layoutY="184.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="148.0" text="Cancel Appointment" AnchorPane.topAnchor="184.0" />
-      <Button layoutX="43.0" layoutY="239.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="148.0" text="Edit Appointment" AnchorPane.topAnchor="240.0" />
+      <Button fx:id="cancelAptBtn" layoutX="43.0" layoutY="184.0" mnemonicParsing="false" onAction="#cancelAptView" prefHeight="35.0" prefWidth="148.0" text="Cancel Appointment" AnchorPane.topAnchor="184.0" />
+      <Button fx:id="editAptBtn" layoutX="43.0" layoutY="239.0" mnemonicParsing="false" onAction="#editAptView" prefHeight="35.0" prefWidth="148.0" text="Edit Appointment" AnchorPane.topAnchor="240.0" />
       <Button layoutX="43.0" layoutY="296.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="148.0" text="ER Appointment" AnchorPane.topAnchor="296.0" />
       <Button layoutX="43.0" layoutY="353.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="148.0" text="Set Doctor Schedule" AnchorPane.topAnchor="352.0" />
       <Button layoutX="401.0" layoutY="128.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="148.0" text="Set Nurse Schedule" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="128.0" />

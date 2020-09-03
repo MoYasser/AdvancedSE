@@ -7,7 +7,7 @@ public class Receptionist extends Account {
     Scanner scan=new Scanner(System.in);
     static Manage manage = new Manage();
     String ID,Username,Password;
-    Double salary;
+    String salary;
     File schedule;
 
 
@@ -38,11 +38,23 @@ public class Receptionist extends Account {
         this.ID = ID;
     }
 
+    public String getID() {
+        return ID;
+    }
+
     public void setUsername(String username) {
         Username = username;
     }
 
     public void setPassword(String password) {
         Password = password;
+    }
+
+    public void setSalary(String salary) {
+        this.salary = salary;
+    }
+
+    public String getSalary() {
+        return salary;
     }
 }

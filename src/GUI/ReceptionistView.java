@@ -16,8 +16,14 @@ import java.io.IOException;
 public class ReceptionistView {
     public Button addAppointmentBtn;
     public Button logOutBtn;
+    public Button cancelAptBtn;
+    public Button editAptBtn;
     Appointment appointment = new Appointment();
     static Manage manage = new Manage();
+
+    public ReceptionistView() throws IOException {
+    }
+
     public void initialize(){
 
     }
@@ -31,6 +37,20 @@ public class ReceptionistView {
 
     public void logout(ActionEvent actionEvent) throws IOException {
         Parent viewParent = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
+        Scene viewScene = new Scene(viewParent);
+        Stage primaryStage = (Stage) logOutBtn.getScene().getWindow();
+        primaryStage.setScene(viewScene);
+    }
+
+    public void cancelAptView(ActionEvent actionEvent) throws IOException {
+        Parent viewParent = FXMLLoader.load(getClass().getResource("CancelAptView.fxml"));
+        Scene viewScene = new Scene(viewParent);
+        Stage primaryStage = (Stage) logOutBtn.getScene().getWindow();
+        primaryStage.setScene(viewScene);
+    }
+
+    public void editAptView(ActionEvent actionEvent) throws IOException {
+        Parent viewParent = FXMLLoader.load(getClass().getResource("EditAptView.fxml"));
         Scene viewScene = new Scene(viewParent);
         Stage primaryStage = (Stage) logOutBtn.getScene().getWindow();
         primaryStage.setScene(viewScene);

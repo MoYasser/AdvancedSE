@@ -1,6 +1,5 @@
 package GUI;
 
-import Func.Appointment;
 import Func.Manage;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -12,26 +11,22 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class DAppointments {
+public class CancelAptView {
+    static Manage manage = new Manage();
+    public Button searchBtn;
+    public Button cancelAptBtn;
     public Button backBtn;
-    public TextField patientTxt;
-    Manage manage = new Manage();
-    public TextField appointmentIDTxt;
-    public TextField docTxt;
-    public TextField nurseTxt;
-    public TextField priceTxt;
-    public TextField diseaseTxt;
-    public Button saveBtn;
+    public TextField appointmentID;
+    int s =0;
 
-    public void saveAppointment(ActionEvent actionEvent) throws IOException {
-        Appointment appointment = new Appointment();
-        appointment.setAppointmentID(appointmentIDTxt.getText());
-        appointment.getSupervisingDr().setName(docTxt.getText());
-        appointment.getAssistingNurse().setName(nurseTxt.getText());
-        appointment.getPatient().setName(patientTxt.getText());
-        appointment.setPrice(priceTxt.getText());
-        appointment.setDisease(diseaseTxt.getText());
-        manage.appointments.add(appointment);
+    public void DeleteApt(ActionEvent actionEvent) throws IOException {
+        for(int i=0; i< manage.appointments.size();i++){
+            if(appointmentID.getText().equalsIgnoreCase(manage.appointments.get(i).getAppointmentID())){
+                s = i;
+            }
+        }
+        appointmentID.setText(manage.appointments.get(s).getAppointmentID());
+        manage.appointments.remove(s);
         Parent rooto = FXMLLoader.load(getClass().getResource("RegSuccess.fxml"));
         Stage successStage = new Stage();
         successStage.setTitle("HCC System");

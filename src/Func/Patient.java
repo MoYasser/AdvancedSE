@@ -2,7 +2,7 @@ package Func;
 
 import java.util.ArrayList;
 
-public class Patient extends Account{
+public class Patient extends Account {
     static Manage manage = new Manage();
     String ID;
     ArrayList<Appointment> pastAppointments;
@@ -11,7 +11,7 @@ public class Patient extends Account{
     ArrayList<String> chronicIllness;
 
 
-    public Patient(){
+    public Patient() {
         pastAppointments = new ArrayList<Appointment>();
         payments = new ArrayList<Payment>();
         Allergies = new ArrayList<String>();
@@ -21,5 +21,9 @@ public class Patient extends Account{
 
     public void setID(String ID) {
         this.ID = ID;
+    }
+
+    public String getID() {
+        return ID;
     }
 }

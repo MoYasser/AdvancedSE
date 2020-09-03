@@ -5,7 +5,7 @@ import java.io.File;
 public class Nurse extends Account {
     static Manage manage = new Manage();
     String ID,Username,Password,speciality;
-    Double salary;
+    String salary;
     File schedule;
 
     public void acceptTask(Appointment app){
@@ -17,7 +17,7 @@ public class Nurse extends Account {
     public File checkSchedule(){
         return schedule;
     }
-    public double checkSalary(){
+    public String checkSalary(){
         return salary;
     }
 
@@ -37,7 +37,19 @@ public class Nurse extends Account {
         this.ID = ID;
     }
 
+    public String getID() {
+        return ID;
+    }
+
     public void setUsername(String username) {
         Username = username;
+    }
+
+    public String getSalary() {
+        return salary;
+    }
+
+    public void setSalary(String salary) {
+        this.salary = salary;
     }
 }

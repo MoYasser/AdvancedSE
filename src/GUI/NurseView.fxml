@@ -12,7 +12,7 @@
     <ImageView fx:id="img" fitHeight="517.0" fitWidth="619.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@../Resources/3692156.jpg" />
     </ImageView>
-    <Button layoutX="84.0" layoutY="154.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="127.0" text="View Salary" />
+    <Button fx:id="NurseSalaryBtn" layoutX="84.0" layoutY="154.0" mnemonicParsing="false" onAction="#NurseSalaryView" prefHeight="50.0" prefWidth="127.0" text="View Salary" />
     <Text fill="#c21c1c" layoutX="43.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Nurse">
         <font>
             <Font size="30.0" />
