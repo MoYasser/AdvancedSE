@@ -21,7 +21,7 @@
          <DropShadow />
       </effect>
     </Text>
-    <Button layoutX="84.0" layoutY="222.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="127.0" text="View Schedule" />
+    <Button layoutX="84.0" layoutY="222.0" mnemonicParsing="false" onAction="#NurseUserInfoView" prefHeight="50.0" prefWidth="127.0" text="User Info" />
     <Button fx:id="logOutBtn" layoutX="84.0" layoutY="292.0" mnemonicParsing="false" onAction="#logOut" prefHeight="50.0" prefWidth="127.0" text="Log out" />
     <Text fill="#1d40c2" layoutX="474.0" layoutY="270.0" stroke="#f4f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="HCC" textAlignment="RIGHT">
         <font>

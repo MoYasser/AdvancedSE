@@ -35,4 +35,11 @@ public class DoctorView {
         successStage.setResizable(false);
         successStage.show();
     }
+
+    public void DocUserInfoView(ActionEvent actionEvent) throws IOException {
+        Parent viewParent = FXMLLoader.load(getClass().getResource("DocUserInfoView.fxml"));
+        Scene viewScene = new Scene(viewParent);
+        Stage primaryStage = (Stage) logOutBtn.getScene().getWindow();
+        primaryStage.setScene(viewScene);
+    }
 }
